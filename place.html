@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Vancouver, Canada - Pablo Acuna</title>
+    <meta name="description" content="Canada Facts">
+    <meta name="author" content="Pablo Acuna">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Link to Files -->
+    <link rel="stylesheet" href="styles/place.css"> 
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Vancouver, Canada</h1>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/vancouver-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/vancouver-medium.webp" media="(max-width: 500px)">
+                <img src="images/vancouver-small.webp" alt="vancouver, Canada">
+               
+            </picture>
+     
+            <div class="hero-info">
+                <!-- Section 1 -->
+                <section class="info">
+                    <h2>Data</h2>
+                    <p><strong>Area:</strong> 9,984,670 Square Km</p>
+                    <p><strong>Population:</strong> 36,991,981</p>
+                    <p><strong>Capital:</strong> Ottawa</p>
+                    <p><strong>Languages:</strong> English & French</p>
+                    <p><strong>Currency:</strong> Canadian Dollar (CAN)</p>
+                    <p><strong>Time Zone:</strong> UTC-03:30 to UTC-08:00</p>
+                    <p><strong>Calling Code:</strong> +1</p>
+                    <p><strong>Internet TLD:</strong> .ca</p>
+                </section>
+            </div>
+
+            <!-- Section 2 -->
+            <section class="weather-info">                   
+                 <h2>Weather</h2>
+                 
+                 <div class="weather-icon">
+                    <img src="images/weather-icon.svg" alt="Weather Icon">
+                 </div>
+                
+                <p><strong>Temperature:</strong> <span id="temperature">-10°C</span></p>
+                <p><strong>Conditions:</strong> <span id="conditions">Continental Climate</span></p>
+                <p><strong>Wind:</strong> <span id="wind">25 km/h</span></p>
+                <p><strong>Wind Chill:</strong> <span id="wind-chill">-20°C</span></p>
+            </section>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Pablo Acuna | Canada</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
+
