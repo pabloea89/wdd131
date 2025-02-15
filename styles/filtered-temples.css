@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #bbb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid black;
+    position: relative;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰"; 
+}
+
+#menu.open::before {
+    content: "❌"; 
+}
+
+nav {
+    background-color: #36454f;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+nav.open {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+nav a:hover, nav a.active {
+    text-decoration: underline double;
+    background-color: #eee;
+    color: #000;
+    border-radius: 10px;
+}
+
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.temples {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    justify-items: center;
+    margin: 50px auto;
+}
+
+.temples figure {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+}
+
+.temples img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #353d46;
+    transition: transform 0.3s;
+}
+
+.temples img:hover {
+    transform: scale(1.05);
+}
+
+
+@media (min-width: 600px) {
+    nav {
+        display: block;
+        position: static;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .temples {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #bbb;
+    margin-top: 30px;
+}
+#lastModified{
+    color: blue;
+}
+
+.temple-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.temple-detail {
+    margin-bottom: 8px; 
+}
+
+figcaption {
+    margin-bottom: 12px; 
+}
+
+.blue-text {
+    color: blue;
+    font-weight: bold;
+}

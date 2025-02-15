@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>W04 Assignment: Filtered Temple Album</title>
+    <meta name="description" content="Filtered Picture Album">
+    <meta name="author" content="Pablo Acuna">
+
+    <!-- Links -->
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Temple Album</h1>
+        <button type="button" id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" class="active" data-filter="all">Home</a></li>
+                <li><a href="#" data-filter="old">Old</a></li>
+                <li><a href="#" data-filter="new">New</a></li>
+                <li><a href="#" data-filter="large">Large</a></li>
+                <li><a href="#" data-filter="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Temple Gallery</h2>
+        <div class="temples"></div> 
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span></p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
