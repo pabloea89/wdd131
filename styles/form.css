@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e6e6fa;
+    margin: 0;
+    padding: 20px;
+}
+
+.review-wrapper {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-box {
+    background-color: #4b0082;
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px; 
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.form-container {
+    background: #ddd;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px; 
+    box-sizing: border-box;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+
+select, input[type="date"], textarea, input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-around; 
+    gap: 15px; 
+    align-items: center;
+    margin-top: 5px;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.features div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.features input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.features label {
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    background-color: #a971f7;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color:  #4b0082;
+}
+
+footer {
+    font-size: 14px;
+    text-align: center;
+    background-color: #4b0082;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 500px; 
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .review-wrapper {
+        max-width: 90%;
+    }
+}
