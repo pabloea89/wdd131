@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pedigree Painting-Website W06</title>
+    <meta name="description" content="WDD 131 - Website">
+    <meta name="author" content="Pablo Acuna">
+
+
+    <!-- Links -->
+    <link rel="stylesheet" href="styles/website.css">
+    <script defer src="scripts/website.js"></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <img src="images/pedigree-logo.png" alt="Pedigree Painting Logo" class="logo-img">
+            <a href="index.html"></a>
+        </div>
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="images/hero-website.jpg" alt="Hero Image" loading="lazy">
+        <div class="hero-content">
+            <h1>Transform Your Space with Pedigree Painting</h1>
+            <p>High-quality painting services for your home and business.</p>
+        
+            <a href="contact-us.html">
+                <button id="quote-btn">Get a Quote</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2>OUR SERVICES</h2>
+        <p class="services-description">
+            At Pedigree Painting, we offer a wide range of professional painting services designed to transform and protect your property. 
+            Our experienced team delivers high-quality craftsmanship, ensuring that every project is completed with precision and care.
+        </p>
+    
+        <div class="services-container">
+            <div class="service">
+                <img src="images/interior.jpg" alt="Interior Painting" loading="lazy">
+                <div class="service-text">
+                    <h3>INTERIOR PAINTING</h3>
+                    <p>Transform your indoor spaces with our expert interior painting services through all year.</p>
+                </div>
+            </div>
+    
+            <div class="service">
+                <img src="images/exterior.jpg" alt="Exterior Painting" loading="lazy">
+                <div class="service-text">
+                    <h3>EXTERIOR PAINTING</h3>
+                    <p>Boost curb appeal and protect your property with our professional exterior painting services.</p>
+                </div>
+            </div>
+    
+            <div class="service">
+                <img src="images/strata.jpg" alt="Commercial Painting" loading="lazy">
+                <div class="service-text">
+                    <h3>COMMERCIAL PAINTING</h3>
+                    <p>We provide high-quality commercial painting services for offices, retail stores, warehouses, and more.</p>
+                </div>
+            </div>
+    
+            <div class="service">
+                <img src="images/strata.jpg" alt="Strata Painting" loading="lazy">
+                <div class="service-text">
+                    <h3>STRATA PAINTING</h3>
+                    <p>Our strata painting services are designed for apartments, condominiums, and multi-unit complexes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+        <h2>Schedule an Estimate</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Email Address" required>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+            </div>
+            <div class="form-group">
+                <label for="service">Pick Your Service:</label>
+                <select id="service" required>
+                    <option value="">Select a Service</option>
+                    <option value="interior">Interior Painting</option>
+                    <option value="exterior">Exterior Painting</option>
+                    <option value="commercial">Commercial Painting</option>
+                    <option value="strata">Strata Painting</option>
+                </select>
+            </div>
+            <textarea id="message" placeholder="Additional Details" required></textarea>
+            <button type="submit">Request Estimate</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year"></span> Pedigree Painting. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+
+
